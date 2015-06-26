@@ -1,0 +1,23 @@
+{
+    "name": "lartificer/news",
+    "description": "",
+    "authors": [
+        {
+            "name": "Paul Mohr",
+            "email": "p.mohr@sopamo.de"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "illuminate/support": "5.0.*"
+    },
+    "autoload": {
+        "classmap": [
+            "src/migrations"
+        ],
+        "psr-0": {
+            "Lartificer\\News\\": "src/"
+        }
+    },
+    "minimum-stability": "stable"
+}

@@ -32,4 +32,27 @@ class HomeController extends Controller {
 		return view('home');
 	}
 
+    /**
+     * Returns the login view
+     *
+     * @return \Illuminate\View\View
+     */
+    public function getLogin() {
+        return view('auth.login');
+    }
+
+
+
+    /**
+     * Logs the user out and redirects him/her to the main page
+     *
+     * @return mixed
+     */
+    public function logout() {
+
+        \Auth::logout();
+
+        return \Redirect::to('/');
+    }
+
 }

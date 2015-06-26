@@ -4,6 +4,8 @@ use App\Http\Controllers\Controller;
 use Illuminate\Contracts\Auth\Guard;
 use Illuminate\Contracts\Auth\Registrar;
 use Illuminate\Foundation\Auth\AuthenticatesAndRegistersUsers;
+use Illuminate\Support\Facades\Input;
+use Illuminate\Support\Facades\Redirect;
 
 class AuthController extends Controller {
 
@@ -19,6 +21,7 @@ class AuthController extends Controller {
 	*/
 
 	use AuthenticatesAndRegistersUsers;
+    protected $redirectTo = '/';
 
 	/**
 	 * Create a new authentication controller instance.
@@ -34,5 +37,25 @@ class AuthController extends Controller {
 
 		$this->middleware('guest', ['except' => 'getLogout']);
 	}
+
+    /**
+     * Handle an authentication attempt with the given password and email address
+     *
+     * @return Response
+     */
+    public function authenticate() {
+        $email = Input::get('email');
+        $password = Input::get('password');
+
+        if (Auth::attempt(['email' => $email, 'password' => $password])) {
+            return Redirect::to('/');
+        }
+
+        if (Auth::viaRemember()) {
+            return Redirect::to('/');
+        }
+
+        return Redirect::back();
+    }
 
 }

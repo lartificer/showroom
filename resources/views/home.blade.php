@@ -8,7 +8,11 @@
 				<div class="panel-heading">Home</div>
 
 				<div class="panel-body">
-					You are logged in!
+                    @if(Auth::check())
+					    You are logged in!
+                    @else
+                        You are not logged in!
+                    @endif
 				</div>
 			</div>
 		</div>
