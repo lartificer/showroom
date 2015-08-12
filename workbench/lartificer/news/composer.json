@@ -1,10 +1,11 @@
 {
     "name": "lartificer/news",
-    "description": "",
+    "description": "A news component for the lartificer platform",
+    "license": "MIT",
     "authors": [
         {
-            "name": "Paul Mohr",
-            "email": "p.mohr@sopamo.de"
+            "name": "Fabian Henkel",
+            "email": "f.henkel@sopamo.de"
         }
     ],
     "require": {
@@ -12,11 +13,8 @@
         "illuminate/support": "5.0.*"
     },
     "autoload": {
-        "classmap": [
-            "src/migrations"
-        ],
         "psr-0": {
-            "Lartificer\\News\\": "src/"
+            "Lartificer\\News\\": "src/workbench"
         }
     },
     "minimum-stability": "stable"
