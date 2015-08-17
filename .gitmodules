@@ -1,0 +1,3 @@
+[submodule "workbench/lartificer/news"]
+	path = workbench/lartificer/news
+	url = https://github.com/lartificer/news
