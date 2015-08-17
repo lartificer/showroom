@@ -159,6 +159,7 @@ return [
 		 * Lartificer
 		 */ 
 		'Lartificer\Contactform\ContactformServiceProvider',
+		'Lartificer\News\NewsServiceProvider',
 
 	],
 

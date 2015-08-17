@@ -13,6 +13,11 @@
 
 Route::get('/', 'HomeController@index');
 
+Route::get('/login', 'HomeController@getLogin');
+Route::post('/login', 'AuthController@authenticate');
+
+Route::get('/logout', 'HomeController@logout');
+
 Route::controllers([
 	'auth' => 'Auth\AuthController',
 	'password' => 'Auth\PasswordController',

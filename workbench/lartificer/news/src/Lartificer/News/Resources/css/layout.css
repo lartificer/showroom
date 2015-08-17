@@ -1,0 +1,45 @@
+.message-container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.message-container > .success-message {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #43AC6A;
+}
+
+.message-container > .error-message {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #f04124;
+}
+
+.editor.content {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #CCCCCC;
+}
+
+.date-container {
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #CCCCCC;
+    border-top: 1px solid #CCCCCC;
+    margin-bottom: 30px;
+}
+
+.icon-panel .visibility-box {
+    text-align: center;
+}
+
+/*
+ * If the news overview is being displayed by a small screen, highlight the date a bit
+*/
+@media only screen and (max-width: 640px) {
+    .date-container {
+        background-color: #DBDBDB;
+    }
+}

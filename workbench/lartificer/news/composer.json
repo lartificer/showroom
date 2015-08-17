@@ -1,0 +1,21 @@
+{
+    "name": "lartificer/news",
+    "description": "A news component for the lartificer platform",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Fabian Henkel",
+            "email": "f.henkel@sopamo.de"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "illuminate/support": "5.0.*"
+    },
+    "autoload": {
+        "psr-0": {
+            "Lartificer\\News\\": "src/workbench"
+        }
+    },
+    "minimum-stability": "stable"
+}
