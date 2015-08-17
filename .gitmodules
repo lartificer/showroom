@@ -1,3 +1,6 @@
 [submodule "workbench/lartificer/news"]
 	path = workbench/lartificer/news
 	url = https://github.com/lartificer/news
+[submodule "workbench/lartificer/contactform"]
+	path = workbench/lartificer/contactform
+	url = https://github.com/lartificer/contactform
